@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Level 3 STEM Guide | Study Mode | Video</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="assets/siteLogoStudy.png">
+</head>
+<!-- body -->
+<body class="video-mode studyPage ">
+    <!-- header -->
+    <header id="header">
+        <div id="branding">
+            <!-- logo -->
+            <a href="index.html">
+                <img class="logo" src="assets/siteLogoStudy.png" alt="site logo">
+            </a>            <!-- name -->
+            <h1 id="name">Level 3 STEM Guide</h1>
+            <button id="burgerMenu">
+                <img src="assets/burgerStudy.png" alt="hamburger menu icon">
+            </button>
+        </div>
+        <!-- nav -->
+        <div id="navbar">
+            <!-- top menu -->
+            <ul>
+                <li id="home-dropdown">
+                    <a id="home" href="index.html"><h2>Home</h2></a>
+                </li>
+                <li id="study-dropdown">
+                    <a id="study" href="studymode.html"><h2>Study Mode</h2></a>
+                </li>
+                <li id="subjects-dropdown">
+                    <a id="subjects"><h2>Subjects</h2></a>
+                    <button id="subjects-button">+</button>
+                    <!-- second level -->
+                    <div id="dropdown">
+                        <ul>
+                            <li id="math-dropdown">
+                                <a href="math.html">Math</a>
+                                <button id="math-button">+</button>
+                                <!-- math third level -->
+                              <div id="math-dropdown2" class="dropdown2">
+                                  <ul>
+                                      <li>
+                                          <a href="math.html#complex-numbers">Complex Numbers</a>
+                                      </li>
+                                      <li>
+                                          <a href="math.html#differentiation">Differentiation</a>
+                                      </li>
+                                      <li>
+                                          <a href="math.html#integration">Integration</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li id="physics-dropdown">
+                                <a href="physics.html">Physics</a>
+                                <button id="physics-button">+</button>
+                                <!-- physics third level -->
+                                <div id="physics-dropdown2" class="dropdown2">
+                                    <ul>
+                                        <li>
+                                            <a href="">Electricity</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mechanics</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Waves</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="chemistry-dropdown">
+                                <a href="chemistry.html">Chemistry</a>
+                                <button id="chemistry-button">+</button>
+                                <!-- chemistry third level -->
+                                <div id="chemistry-dropdown2" class="dropdown2">
+                                    <ul>
+                                        <li>
+                                            <a href="">Aqueous Equilibria</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Organic Compounds</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Thermo Chem</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- article -->
+    <article>
+        <!-- page -->
+        <!-- buttons -->
+        <button id="settings" type="button"><img src="assets/icons8-settings-50.png" height="50" width="50" alt="Settings gear icon"><br>
+        Settings</button>
+        <button id="back-to-settings" type="button">Back to settings</button>
+        <section id="page">
+            <div id="mobile-settings">
+                <button id="back" type="button">Back</button>
+                <button id="tasks-nav-button" type="button">Tasks</button>
+                <button id="audio-nav-button" type="button">Audio</button>
+                <!-- icon credit -->
+                <div class="settings-credit"><a target="_blank" href="https://icons8.com/icon/2969/settings">Settings</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </div>
+              </div>
+            <!-- switch mode buttons -->
+            <div class="box" id="switchMode">
+                <form action="studymode.html">
+                    <button class="modeButton" id="classic">Classic</button>
+                </form>
+                <form action="studyvideomode.html">
+                    <button class="modeButton" id="video">Video</button>
+                </form>
+            </div>
+            <!--pomodoro timer  -->
+            <div class="box" id="pomodoro">
+                <audio id="pomodoroSound">
+                    <source class="sound" src="assets/ping.mp3" type="audio/mp3">
+                </audio>
+                <div class="clockBox">
+                    <div class="clockDisplay">
+                        <div class="timeDisplay">
+                            <span id="minutes">00</span>
+                            <span id="colon">:</span>
+                            <span id="seconds">00</span>
+                        </div>
+                    </div>
+                    <div class="clockControls">
+                        <div class="controlsLeft">
+                            <p id="studyLabel">Study</p>
+                            <p id="sessionTime">15 min</p>
+                            <div id="studyButtons">
+                                <button id="seshMinus" class="timeAdjust">-</button>
+                                <button id="seshPlus" class="timeAdjust">+</button>
+                            </div>
+                        </div>
+                        <div class="controlsRight">
+                            <p id="breakLabel">Break</p>
+                            <p id="breakTime">5 min</p>
+                            <div id="breakButtons">
+                                <button id="breakMinus" class="timeAdjust">-</button>
+                                <button id="breakPlus" class="timeAdjust">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="startReset">
+                        <button id="start">Start</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <!-- tasks list -->
+            <!-- follow this tutorial: https://www.youtube.com/watch?v=G0jO8kUrg-I&ab_channel=GreatStack -->
+            <div class="box" id="tasks">
+                <h2>Tasks List</h2>
+                <div id="taskList">
+                    <input type="text" id="taskInput" placeholder="Add task">
+                    <button onclick="addTask()">+</button>
+                </div>
+                <ul id="tasksContainer">
+                    <!-- <input type="checkbox"><li class="checked">a</li>
+                    <input type="checkbox"><li>b</li> -->
+                </ul>
+            </div>
+            <!-- sound box -->
+            <div class="box" id="sound">
+                <p>Lofi</p><audio id="lofi" loop preload='auto'>
+                    <source class="sound" src="assets/lofi.mp3" type="audio/mp3">
+                </audio>
+                <button id="play1">Play</button>
+                <input type="range" min="0" max="1" step="0.01" id="volumeSlider1">
+                <p>Rain Noise</p><audio id="rainNoise" loop preload='auto'>
+                    <source class="sound" src="assets/rainNoise.mp3" type="audio/mp3">
+                </audio>
+                <button id="play2">Play</button>
+                <input type="range" min="0" max="1" step="0.01" id="volumeSlider2">
+            </div>
+        </section>
+        
+    </article>
+
+    <!--footer-->
+    <footer>
+        <div id="brandingFooter">
+            <h2>Level 3 STEM Guide</h2>
+            <a href="index.html">
+                <img class="logo" id="footerImage" src="assets/siteLogoStudy.png" alt="site logo">
+            </a>
+        </div>
+        <ul id="footerNav">
+          <li id="studyFooter"><h3>Study Mode</h3>
+            <ul>
+              <li><a href="studymode.html">Classic</a></li>
+              <li><a href="studyvideomode.html">Video</a></li>
+            </ul>
+          </li>
+            <li id="subjectsFooter">
+                <h3>Subjects</h3>
+              <div id="footerMath">
+                <ul>
+                  <li><a href="math.html"><h4>Math</h4></a>
+                    <ul>
+                      <li><a href="math.html#complex-numbers">Complex numbers</a></li>
+                      <li><a href="math.html#differentiation">Differentiation</a></li>
+                      <li><a href="math.html#integration">Integration</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+                <div id="footerPhys">
+                    <ul>
+                        <li>
+                            <a href=""><h4>Physics</h4></a>
+                            <ul>
+                                <li><a href="">Electricity</a></li>
+                                <li><a href="">Mechanics</a></li>
+                                <li><a href="">Waves</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footerChem">
+                    <ul>
+                        <li>
+                            <a href=""><h4>Chemistry</h4></a>
+                            <ul>
+                                <li><a href="">Aqueous Equilibria</a></li>
+                                <li><a href="">Organic Compounds</a></li>
+                                <li><a href="">Thermo Chem</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+    <script>window.onload = function() {
+            if (window.location.pathname.endsWith("studyvideomode.html")) {
+                // check if the device is in portrait orientation and the width is mobile width or less
+                if (window.matchMedia("(orientation: portrait)").matches && window.innerWidth <= 480) {
+                    alert("Unfortunately, video mode isn't available for mobile devices in portrait orientation - the site will continue in classic mode.");
+                }
+                // check if the device is in portrait orientation but not necessarily mobile width
+                else if (window.matchMedia("(orientation: portrait)").matches) {
+                    alert("Video mode is optimized for landscape orientation. Please rotate your device for the best experience. If not, the site will continue in classic mode.");
+                }
+            }
+        };
+        
+    </script>
+</body>
+
+</html>

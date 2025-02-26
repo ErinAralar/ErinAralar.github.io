@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Level 3 STEM Guide | Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="script.js" rel="script" type="text/js" />
+    <link rel="icon" type="image/x-icon" href="assets/siteLogoNormal.png">
+</head>
+<!-- body -->
+<body class="home-page">
+    <!-- header -->
+    <header id="header">
+        <div id="branding">
+            <!-- logo -->
+            <a href="index.html">
+                <img class="logo" src="assets/siteLogoNormal.png" alt="site logo">
+            </a>            <!-- name -->
+            <h1 id="name">Level 3 STEM Guide</h1>
+            <button id="burgerMenu">
+                <img src="assets/burger.png" alt="hamburger menu icon">
+            </button>
+        </div>
+        <!-- nav -->
+        <div id="navbar">
+            <!-- top menu -->
+            <ul>
+                <li id="home-dropdown">
+                    <a id="home" href="index.html"><h2>Home</h2></a>
+                </li>
+                <li id="study-dropdown">
+                    <a id="study" href="studymode.html"><h2>Study Mode</h2></a>
+                </li>
+                <li id="subjects-dropdown">
+                    <a id="subjects"><h2>Subjects</h2></a>
+                    <button id="subjects-button">+</button>
+                    <!-- second level -->
+                    <div id="dropdown">
+                        <ul>
+                            <li id="math-dropdown">
+                                <a href="math.html">Math</a>
+                                <button id="math-button">+</button>
+                                <!-- math third level -->
+                              <div id="math-dropdown2" class="dropdown2">
+                                  <ul>
+                                      <li>
+                                          <a href="math.html#complex-numbers">Complex Numbers</a>
+                                      </li>
+                                      <li>
+                                          <a href="math.html#differentiation">Differentiation</a>
+                                      </li>
+                                      <li>
+                                          <a href="math.html#integration">Integration</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            <li id="physics-dropdown">
+                                <a href="physics.html">Physics</a>
+                                <button id="physics-button">+</button>
+                                <!-- physics third level -->
+                                <div id="physics-dropdown2" class="dropdown2">
+                                    <ul>
+                                        <li>
+                                            <a href="">Electricity</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mechanics</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Waves</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="chemistry-dropdown">
+                                <a href="chemistry.html">Chemistry</a>
+                                <button id="chemistry-button">+</button>
+                                <!-- chemistry third level -->
+                                <div id="chemistry-dropdown2" class="dropdown2">
+                                    <ul>
+                                        <li>
+                                            <a href="">Aqueous Equilibria</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Organic Compounds</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Thermo Chem</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- article -->
+    <article>
+        <!-- page -->
+        <section class="about-us-home">
+            <div id="text">
+                <h1>About Us</h1>
+                <p>
+                    Level 3 STEM Guide is the go-to digital destination for NCEA Level 3 STEM students aiming to ace their exams. The goal is to help you study smarter, not harder. Here you can find a collection of resources and tools, from study guides to exam tips. Need to focus? Check out the 'Study Mode' page with calming sounds to keep distractions at bay. So whether you're prepping for a big test or just need some extra help, we've got you covered. Join us on the journey to academic success! Images and audio are from Pixabay.
+                </p>
+            </div>
+            <div id="about-us-image">
+                <img src="assets/aboutUs.jpg" alt="An image of a student studying very hard">
+                <p>(Accurate) photo of how we'll all be after using this website!!</p>
+            </div>
+        </section>
+        <section id="home-subjects">
+            <h1>Subjects</h1>
+            <div class="home-subjects-container">
+                <a href="math.html" id="math-container">
+                    <div class="subject-text">
+                        <div class="h2">
+                            <h2>Math</h2>
+                        </div>
+                        <p>
+                            Find resources and outlines for each Math paper.
+                        </p>
+                    </div>
+                    <img src="assets/math.jpg" alt="Image of math questions with a calculator and pencil in frame.">
+                </a>
+                <a href="physics.html" id="physics-container">
+                    <div class="subject-text">
+                        <div class="h2">
+                            <h2>Physics</h2>
+                        </div>
+                        <p>
+                            Find resources and outlines for each Physics paper. (Coming Soon)
+                        </p>
+                    </div>
+                    <img src="assets/physics.jpg" alt="Image of a physics test with a hand holding a pencil over it.">
+                </a>
+                <a href="chemistry.html" id="chem-container">
+                    <div class="subject-text">
+                        <div class="h2">
+                            <h2>Chemistry</h2>
+                        </div>
+                        <p>
+                            Find resources and outlines for each Chemistry paper. (Coming Soon)
+                        </p>
+                    </div>
+                    <img src="assets/chemistry.jpg" alt="Image of test tubes, with a dropper over one of them.">
+                </a>
+            </div>
+        </section>
+        <!-- vinyl gif -->
+
+    </article>
+    <!-- footer -->
+    <footer>
+        <div id="brandingFooter">
+            <h2>Level 3 STEM Guide</h2>
+            <a href="index.html">
+                <img class="logo" id="footerImage" src="assets/siteLogoNormal.png" alt="site logo">
+            </a>
+        </div>
+        <ul id="footerNav">
+          <li id="studyFooter"><h3>Study Mode</h3>
+            <ul>
+              <li><a href="studymode.html">Classic</a></li>
+              <li><a href="studyvideomode.html">Video</a></li>
+            </ul>
+          </li>
+            <li id="subjectsFooter">
+                <h3>Subjects</h3>
+              <div id="footerMath">
+                <ul>
+                  <li><a href="math.html"><h4>Math</h4></a>
+                    <ul>
+                      <li><a href="math.html#complex-numbers">Complex numbers</a></li>
+                      <li><a href="math.html#differentiation">Differentiation</a></li>
+                      <li><a href="math.html#integration">Integration</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+                <div id="footerPhys">
+                    <ul>
+                        <li>
+                            <a><h4>Physics</h4></a>
+                            <ul>
+                                <li><a>Electricity</a></li>
+                                <li><a>Mechanics</a></li>
+                                <li><a>Waves</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="footerChem">
+                    <ul>
+                        <li>
+                            <a><h4>Chemistry</h4></a>
+                            <ul>
+                                <li><a>Aqueous Equilibria</a></li>
+                                <li><a>Organic Compounds</a></li>
+                                <li><a>Thermo Chem</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
