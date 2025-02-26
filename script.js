@@ -240,44 +240,44 @@ window.onload = function () {
 
 // sound
 // set constants
-const player1 = document.getElementById("lofi");
-const player2 = document.getElementById("rainNoise");
-const volumeSlider1 = document.getElementById("volumeSlider1");
-const volumeSlider2 = document.getElementById("volumeSlider2");
-const playPauseButton1 = document.getElementById("play1");
-const playPauseButton2 = document.getElementById("play2");
+//const player1 = document.getElementById("lofi");
+//const player2 = document.getElementById("rainNoise");
+//const volumeSlider1 = document.getElementById("volumeSlider1");
+//const volumeSlider2 = document.getElementById("volumeSlider2");
+//const playPauseButton1 = document.getElementById("play1");
+//const playPauseButton2 = document.getElementById("play2");
 
-playPauseButton1.addEventListener("click", ()=>{
-  if (player1.paused) { // check if the player is paused
-    player1.play(); // Play the audio
-    playPauseButton1.textContent = "Pause"; // Update button text to "Pause"
-  } else {
-    player1.pause(); // Pause the audio
-    playPauseButton1.textContent = "Play"; // Update button text to "Play"
-  }
-});
+//playPauseButton1.addEventListener("click", ()=>{
+ // if (player1.paused) { // check if the player is paused
+ //   player1.play(); // Play the audio
+//    playPauseButton1.textContent = "Pause"; // Update button text to "Pause"
+//  } else {
+//    player1.pause(); // Pause the audio
+//    playPauseButton1.textContent = "Play"; // Update button text to "Play"
+//  }
+//});
 
 document.addEventListener("DOMContentLoaded", function () {
     console.log(document.getElementById("pomodoroSound").src);
 });
 
-volumeSlider1.addEventListener("input", () => {
-  player1.volume = volumeSlider1.value;
-});
+//volumeSlider1.addEventListener("input", () => {
+//  player1.volume = volumeSlider1.value;
+//});
 
-playPauseButton2.addEventListener("click", ()=>{
-  if (player2.paused) { // check if the player is paused
-    player2.play(); // Play the audio
-    playPauseButton2.textContent = "Pause"; // Update button text to "Pause"
-  } else {
-    player2.pause(); // Pause the audio
-    playPauseButton2.textContent = "Play"; // Update button text to "Play"
-  }
-});
+//playPauseButton2.addEventListener("click", ()=>{
+//  if (player2.paused) { // check if the player is paused
+ //   player2.play(); // Play the audio
+//    playPauseButton2.textContent = "Pause"; // Update button text to "Pause"
+ // } else {
+  //  player2.pause(); // Pause the audio
+  //  playPauseButton2.textContent = "Play"; // Update button text to "Play"
+ // }
+//});
 
-volumeSlider2.addEventListener("input", () => {
-  player2.volume = volumeSlider2.value;
-});
+//volumeSlider2.addEventListener("input", () => {
+ // player2.volume = volumeSlider2.value;
+//});
 
 //study mode mobile
 // set constants
