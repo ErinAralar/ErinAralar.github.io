@@ -257,6 +257,10 @@ playPauseButton1.addEventListener("click", ()=>{
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    console.log(document.getElementById("pomodoroSound").src);
+});
+
 volumeSlider1.addEventListener("input", () => {
   player1.volume = volumeSlider1.value;
 });
