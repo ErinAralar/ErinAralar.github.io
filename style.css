@@ -35,7 +35,7 @@ body {
         }
 
     body.video-mode {
-        background: url('assets/houses.gif') no-repeat center;
+        background: url('houses.gif') no-repeat center;
         background-size: cover;
     }
 
