@@ -731,6 +731,8 @@ li.checked.unchecked::before {
 #sound {
     grid-column: 2;
     grid-row: span 2;
+    height: 100%;         /* Take full grid row height */
+    overflow-y: auto; 
 }
 
     #sound h1 {
